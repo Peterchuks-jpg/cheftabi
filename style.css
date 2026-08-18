@@ -70,7 +70,7 @@ h1, h2, h3 {
 
 /* Hero Section (Home Page) */
 .hero {
-    background: linear-gradient(rgba(42, 17, 36, 0.75), rgba(42, 17, 36, 0.75)), url('images/hero-bg.jpg') center/cover;
+    background: linear-gradient(rgba(42, 17, 36, 0.75), rgba(42, 17, 36, 0.75)), url('hero-bg.jpg') center/cover;
     height: 75vh;
     display: flex;
     align-items: center;
