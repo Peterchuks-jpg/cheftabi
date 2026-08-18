@@ -4,148 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef Tabi | Fine Dining & Nigerian Cuisine</title>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Sticky Header & Navigation -->
-    <header class="navbar" id="navbar">
-        <div class="nav-brand">Chef Tabi</div>
-        <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#dishes" class="nav-link">Signature Dishes</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">Chef Tabi</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content fade-in-up">
-            <h1>Chef Tabi</h1>
-            <p class="subtitle">Elevating Authentic Nigerian & West African Flavors</p>
-            <a href="#contact" class="btn">Inquire for Booking</a>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="reveal">Meet the Chef</h2>
-        <div class="divider reveal"></div>
-        
-        <div class="about-container">
-            <div class="profile-frame reveal-left">
-                <img src="profile.jpg" alt="Chef Tabi" class="profile-img">
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Chef Tabi</h1>
+                <p class="subtitle">Elevating Authentic West African Flavors</p>
+                <a href="contact.html" class="btn">Book an Experience</a>
             </div>
-            <div class="about-text reveal-right">
-                <h3>Heritage Meets Haute Cuisine</h3>
-                <p>With years of culinary expertise, Chef Tabi specializes in reimagining traditional Nigerian dishes into elevated, world-class dining experiences. From rich, slow-simmered soups to modern interpretations of West African classics, every dish honors authentic heritage using fresh ingredients and refined techniques.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Signature Dishes Gallery -->
-    <section id="dishes" class="gallery">
-        <h2 class="reveal">Signature Creations</h2>
-        <div class="divider reveal"></div>
-        <p class="section-hint reveal">Click any dish to view in detail</p>
-
-        <div class="grid">
-            <!-- Dish 1 -->
-            <div class="card reveal-card" data-title="Smokey Party Jollof & Suya Medallions" data-desc="Infused with firewood smoke, served with prime beef suya and plantain mousse.">
-                <div class="card-img-wrapper">
-                    <img src="jollof.jpg" alt="Smokey Party Jollof Rice">
-                    <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                </div>
-                <h3>Smokey Party Jollof & Grilled Suya Medallions</h3>
-            </div>
-            <!-- Dish 2 -->
-            <div class="card reveal-card" data-title="Seafood Fisherman Soup" data-desc="Fresh jumbo prawns, crab, and sea bass poached in a aromatic herbs and local spices.">
-                <div class="card-img-wrapper">
-                    <img src="fisherman-soup.jpg" alt="Seafood Fisherman Soup">
-                    <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                </div>
-                <h3>Seafood Fisherman Soup with Fresh Prawns & Snapper</h3>
-            </div>
-            <!-- Dish 3 -->
-            <div class="card reveal-card" data-title="Ayamase & Ofada Rice Trio" data-desc="Slow-cooked green pepper sauce with tender bleached palm oil braised meats.">
-                <div class="card-img-wrapper">
-                    <img src="ofada.jpg" alt="Ofada Rice Trio">
-                    <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                </div>
-                <h3>Ayamase & Ofada Rice with Gourmet Accompaniments</h3>
-            </div>
-            <!-- Dish 4 -->
-            <div class="card reveal-card" data-title="Slow-Braised Efo Riro" data-desc="Wild spinach cooked in a rich locust bean broth with assorted cuts.">
-                <div class="card-img-wrapper">
-                    <img src="efo-riro.jpg" alt="Rich Efo Riro">
-                    <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                </div>
-                <h3>Slow-Braised Efo Riro & Flaky Swallow</h3>
-            </div>
-            <!-- Dish 5 -->
-            <div class="card reveal-card" data-title="Spiced Goat Meat Pepper Soup" data-desc="Clarified aromatic broth infused with calabash nutmeg and uda seeds.">
-                <div class="card-img-wrapper">
-                    <img src="pepper-soup.jpg" alt="Goat Meat Pepper Soup">
-                    <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                </div>
-                <h3>Spiced Goat Meat & Yam Infused Consommé</h3>
-            </div>
-            <!-- Dish 6 -->
-            <div class="card reveal-card" data-title="Caramelized Dodo & Zobo Reduction" data-desc="Sweet ripe plantain tartlet paired with a hibiscus-clove glaze.">
-                <div class="card-img-wrapper">
-                    <img src="plantain-dessert.jpg" alt="Plantain Dessert">
-                    <div class="overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-                </div>
-                <h3>Caramelized Dodo & Hibiscus (Zobo) Reduction</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox Modal for Dishes -->
-    <div class="modal" id="dishModal">
-        <span class="modal-close" id="modalClose">&times;</span>
-        <div class="modal-content">
-            <img id="modalImg" src="" alt="Dish preview">
-            <h3 id="modalTitle">Dish Name</h3>
-            <p id="modalDesc">Dish Description</p>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="reveal">Get in Touch</h2>
-        <div class="divider reveal"></div>
-        <p class="reveal">Available for exclusive private dining, boutique event catering, and menu consultations.</p>
-        
-        <div class="contact-actions reveal">
-            <a href="https://wa.me/2348069468347?text=Hello%20Chef%20Tabi,%20I%20would%20like%20to%20inquire%20about%20your%20catering%20services." class="btn whatsapp-btn" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
-            </a>
-        </div>
-
-        <p class="contact-info reveal">bookings@cheftabi.com <br> +234 80 6946 8347</p>
-
-        <div class="social-links reveal">
-            <a href="https://instagram.com/chef_tabi" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://facebook.com/cheftabi" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://tiktok.com/@cheftabi" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Chef Tabi. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
 </body>
 </html>
